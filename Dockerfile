@@ -6,4 +6,5 @@ RUN apt-get update \
  && locale-gen en_US.UTF-8 \
  && dpkg-reconfigure locales \
  && apt-get clean all \
- && rm -rf /var/lib/apt/lists/*
+ && rm -rf /var/lib/apt/lists/* \
+ && javac -version
